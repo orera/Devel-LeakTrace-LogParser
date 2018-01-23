@@ -9,7 +9,7 @@
   use Moose;
   with 'MooseX::Getopt';
 
-  Readonly my $LEAKED_RE       => qr/^leaked [A-Z][A-Z]\([^)]+\) from (.*?) line (\d+)$/i;
+  Readonly my $LEAKED_RE       => qr/^leaked [A-Z][A-Z]\([^)]+\) from (.+?) line (\d+)$/i;
   Readonly my $POSITIVE_INT_RE => qr/^[1-9]\d*$/;
 
   has 'filename' => (is => 'ro', isa => 'Str' );
